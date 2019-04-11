@@ -1,0 +1,3 @@
+logging:
+  pattern:
+    console:  '%black(%d{yyyy-MM-dd HH:mm:ss}) %green([%thread]) %highlight(%-5level) %boldMagenta(%logger{10}) - %cyan(%msg%n)'
