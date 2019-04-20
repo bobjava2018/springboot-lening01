@@ -14,13 +14,13 @@ import org.springframework.web.servlet.config.annotation.*;
 public class MyWebMvcConfigSelft implements WebMvcConfigurer {
 
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**")
-                .excludePathPatterns("/","/index","/main").excludePathPatterns("/index.html","/static/**");
-
-        System.out.println("拦截器-----------------------");
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/**")
+//                .excludePathPatterns("/","/index","/main").excludePathPatterns("/index.html","/static/**");
+//
+//        System.out.println("拦截器-----------------------");
+//    }
 
 
     @Override

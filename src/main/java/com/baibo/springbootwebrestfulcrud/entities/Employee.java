@@ -1,5 +1,7 @@
 package com.baibo.springbootwebrestfulcrud.entities;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 
@@ -10,6 +12,8 @@ public class Employee {
     private String email;
     private Integer gender;
     private Department department;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birth;
 
     public Employee() {
